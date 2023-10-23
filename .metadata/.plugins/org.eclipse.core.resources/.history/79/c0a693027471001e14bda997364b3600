@@ -1,0 +1,13 @@
+package numbers;
+import java.util.*;
+public class PrimeOrNot {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner virat= new Scanner(System.in);
+		int year=virat.nextInt();
+		String result=(year%400==0 || (year%4==0 && year%100!=0))?"leep":"not leep";
+		System.out.println(result);
+	}
+
+}
