@@ -1,0 +1,26 @@
+package numbers;
+
+import java.util.*;
+
+public class ReverseInt {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		int rev = 0, rem;
+//		while(num!=0) {
+//			rem=num%10;
+//			rev=rev*10+rem;
+//			num/=10;
+//		}
+		// System.out.println(rev);
+		while (num != 0) {
+			rev = num % 10;
+			System.out.print(rev);
+			num /= 10;
+		}
+
+	}
+
+}
