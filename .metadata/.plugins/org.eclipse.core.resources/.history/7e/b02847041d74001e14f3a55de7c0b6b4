@@ -1,0 +1,32 @@
+package intArray;
+public class FindNonDup {
+
+    public static void main(String[] args) {
+        int[] array = {4, 3,11,2, 7, 2,2,8,8,5,9, 4, 1, 7, 1};
+
+        int nonRepetitiveElement = findNonRepetitiveElement(array);
+
+        System.out.println("Non-Repetitive Element: " + nonRepetitiveElement);
+    }
+
+    private static int findNonRepetitiveElement(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            int currentElement = array[i];
+            boolean isRepetitive = false;
+
+            for (int j = 0; j < array.length; j++) {
+                if (i != j && currentElement == array[j]) {
+                    isRepetitive = true;
+                    break;
+                }
+            }
+
+            if (!isRepetitive) {
+                return currentElement;
+            }
+        }
+
+        // If no non-repetitive element is found, you can return a default value or handle it accordingly.
+        return -1;
+    }
+}
