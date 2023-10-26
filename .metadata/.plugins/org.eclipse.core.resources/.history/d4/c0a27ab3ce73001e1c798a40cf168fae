@@ -1,0 +1,22 @@
+package numbers;
+public class NumberFormat{
+	public static void main(String args) {
+		int input=3835748;
+		String result= ResultFunction(input);
+		System.out.println(result);
+	}
+	private static String ResultFunction(int num) {
+		StringBuilder result=new StringBuilder();
+		String NumberString=Integer.toString(num);
+		int count=0;
+		for(int i=NumberString.length()-1;i>=0;i--) {
+			result.insert(0,NumberString.charAt(i));
+			count++;
+			if(count==3&& i!=0) {
+				result.insert(0,',');
+				count=0;
+			}
+		}
+		return result.toString();
+	}
+}

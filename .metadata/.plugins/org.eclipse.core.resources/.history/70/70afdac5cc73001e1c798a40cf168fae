@@ -1,0 +1,28 @@
+package numbers;
+public class NumberFormat {
+    public static void main(String[] args) {
+        // Input value
+        int inputValue = 4892498;
+
+        // Format the number with commas
+        String res = resfncn(inputValue);
+
+        // Print the formatted value
+        System.out.println(res);
+    }
+
+    // Custom function to add commas to a number
+    private static String resfncn(int number) {
+        StringBuilder result = new StringBuilder();
+        String numberStr = Integer.toString(number);
+
+        int count = 0;
+        for (int i = numberStr.length() - 1; i >= 0; i--) {
+            result.insert(0, numberStr.charAt(i));
+           
+          
+        }
+
+        return result.toString();
+    }
+}

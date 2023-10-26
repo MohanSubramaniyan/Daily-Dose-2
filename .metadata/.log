@@ -2066,3 +2066,684 @@ java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:166)
 	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:151)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2023-10-26 10:42:25.366 -----------------------------------------------
+eclipse.buildId=4.28.0.20230608-1200
+java.version=20.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-10-26 10:42:54.124
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY org.eclipse.core.resources 2 10035 2023-10-26 10:45:14.649
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.e4.ui.css.swt.theme 4 0 2023-10-26 10:46:23.520
+!MESSAGE /css/gef_dark.css
+!STACK 0
+java.io.FileNotFoundException: /css/gef_dark.css
+	at org.eclipse.osgi.storage.url.bundleentry.Handler.findBundleEntry(Handler.java:55)
+	at org.eclipse.osgi.storage.url.BundleResourceHandler.openConnection(BundleResourceHandler.java:182)
+	at java.base/java.net.URL.openConnection(URL.java:1250)
+	at org.eclipse.osgi.storage.url.BundleURLConverter.resolve(BundleURLConverter.java:55)
+	at org.eclipse.core.runtime.FileLocator.resolve(FileLocator.java:288)
+	at org.eclipse.core.internal.runtime.PlatformURLConverter.resolve(PlatformURLConverter.java:53)
+	at org.eclipse.core.runtime.FileLocator.resolve(FileLocator.java:288)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:468)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:436)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:428)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.restore(ThemeEngine.java:624)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.setCSSTheme(PartRenderingEngine.java:1417)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.initializeStyling(PartRenderingEngine.java:1324)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1050)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+
+!ENTRY org.eclipse.jface 2 0 2023-10-26 10:46:29.926
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-10-26 10:46:29.926
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.mylyn.commons.ui 4 0 2023-10-26 10:47:39.632
+!MESSAGE For input string: "or" under radix 16
+!STACK 0
+java.lang.NumberFormatException: For input string: "or" under radix 16
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:665)
+	at org.eclipse.mylyn.internal.commons.ui.E4ThemeColor.getRGBFromCssString(E4ThemeColor.java:57)
+	at org.eclipse.mylyn.commons.ui.GradientColors.getRGBFromTheme(GradientColors.java:211)
+	at org.eclipse.mylyn.commons.ui.GradientColors.getBackground(GradientColors.java:190)
+	at org.eclipse.mylyn.commons.ui.GradientColors.createBorderColor(GradientColors.java:78)
+	at org.eclipse.mylyn.commons.ui.GradientColors.createColors(GradientColors.java:54)
+	at org.eclipse.mylyn.commons.ui.GradientColors.<init>(GradientColors.java:50)
+	at org.eclipse.mylyn.commons.ui.GradientToolTip.initResources(GradientToolTip.java:49)
+	at org.eclipse.mylyn.commons.ui.GradientToolTip.<init>(GradientToolTip.java:44)
+	at org.eclipse.mylyn.internal.tasks.ui.views.TaskListToolTip.<init>(TaskListToolTip.java:126)
+	at org.eclipse.mylyn.internal.tasks.ui.views.TaskListFilteredTree.createActiveTaskComposite(TaskListFilteredTree.java:423)
+	at org.eclipse.mylyn.commons.workbench.AbstractFilteredTree.createFilterControls(AbstractFilteredTree.java:182)
+	at org.eclipse.ui.dialogs.FilteredTree.createControl(FilteredTree.java:362)
+	at org.eclipse.mylyn.commons.workbench.EnhancedFilteredTree.createControl(EnhancedFilteredTree.java:61)
+	at org.eclipse.mylyn.commons.workbench.AbstractFilteredTree.createControl(AbstractFilteredTree.java:92)
+	at org.eclipse.ui.dialogs.FilteredTree.init(FilteredTree.java:331)
+	at org.eclipse.ui.dialogs.FilteredTree.<init>(FilteredTree.java:289)
+	at org.eclipse.mylyn.commons.workbench.EnhancedFilteredTree.<init>(EnhancedFilteredTree.java:48)
+	at org.eclipse.mylyn.commons.workbench.AbstractFilteredTree.<init>(AbstractFilteredTree.java:71)
+	at org.eclipse.mylyn.internal.tasks.ui.views.TaskListFilteredTree.<init>(TaskListFilteredTree.java:135)
+	at org.eclipse.mylyn.internal.tasks.ui.views.TaskListView.createPartControl(TaskListView.java:591)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:158)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.createPartControl(CompatibilityView.java:155)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:365)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:987)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:952)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:141)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:395)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:322)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:202)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:91)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:995)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:659)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:544)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:528)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:73)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:995)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:659)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1344)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:116)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:677)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:150)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:150)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:150)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:150)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:51)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:82)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:116)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.postProcess(PerspectiveStackRenderer.java:64)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:677)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:150)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1083)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-10-26 10:47:53.799
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\postb'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.core.jobs 4 2 2023-10-26 12:23:01.292
+!MESSAGE IJobChangeListener timeout detected. Further calls to IJobChangeListener may occur in random order and join(family) can return too soon. IJobChangeListener should return within 3000 ms. IJobChangeListener methods should not block. Possible deadlock.
+!STACK 0
+java.util.concurrent.TimeoutException: IJobChangeListener timeout detected. Further calls to IJobChangeListener may occur in random order and join(family) can return too soon. IJobChangeListener should return within 3000 ms. IJobChangeListener methods should not block. Possible deadlock.
+	at org.eclipse.core.internal.jobs.JobListeners.waitAndSendEvents(JobListeners.java:106)
+	at org.eclipse.core.internal.jobs.JobManager.withWriteLock(JobManager.java:524)
+	at org.eclipse.core.internal.jobs.JobManager.schedule(JobManager.java:1373)
+	at org.eclipse.core.internal.jobs.InternalJob.schedule(InternalJob.java:396)
+	at org.eclipse.core.runtime.jobs.Job.schedule(Job.java:684)
+	at org.eclipse.mylyn.internal.tasks.ui.TaskListSynchronizationScheduler.schedule(TaskListSynchronizationScheduler.java:115)
+	at org.eclipse.mylyn.internal.tasks.ui.TaskListSynchronizationScheduler.userAttentionGained(TaskListSynchronizationScheduler.java:148)
+	at org.eclipse.mylyn.internal.monitor.ui.ActivityContextManager.fireActive(ActivityContextManager.java:227)
+	at org.eclipse.mylyn.internal.monitor.ui.ActivityContextManager.access$2(ActivityContextManager.java:225)
+	at org.eclipse.mylyn.internal.monitor.ui.ActivityContextManager$2.active(ActivityContextManager.java:93)
+	at org.eclipse.mylyn.internal.monitor.ui.CheckActivityJob.run(CheckActivityJob.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.core.jobs 4 2 2023-10-26 12:23:01.307
+!MESSAGE Thread that is running the IJobChangeListener: Worker-23: Synchronizing Relevant Tasks
+	at org.eclipse.mylyn.internal.tasks.ui.TaskListSynchronizationScheduler.jobDone(TaskListSynchronizationScheduler.java:168)
+	at org.eclipse.mylyn.internal.tasks.ui.TaskListSynchronizationScheduler$1.done(TaskListSynchronizationScheduler.java:59)
+	at org.eclipse.core.internal.jobs.JobListeners.sendEvent(JobListeners.java:160)
+	at org.eclipse.core.internal.jobs.JobListeners.sendEventsAsync(JobListeners.java:140)
+	at org.eclipse.core.internal.jobs.JobListeners.waitAndSendEvents(JobListeners.java:80)
+	at org.eclipse.core.internal.jobs.JobManager.withWriteLock(JobManager.java:524)
+	at org.eclipse.core.internal.jobs.JobManager.endJob(JobManager.java:728)
+	at org.eclipse.core.internal.jobs.WorkerPool.endJob(WorkerPool.java:117)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:83)
+
+All thread infos: 
+"main" prio=6 Id=1 RUNNABLE
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:91)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4844)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5040)
+	at org.eclipse.swt.internal.win32.OS.EndDeferWindowPos(Native Method)
+	at org.eclipse.swt.widgets.Composite.resizeChildren(Composite.java:993)
+	at org.eclipse.swt.widgets.Composite.resizeChildren(Composite.java:970)
+	...
+
+"Reference Handler" daemon prio=10 Id=9 RUNNABLE
+	at java.base@20.0.2/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+	at java.base@20.0.2/java.lang.ref.Reference.processPendingReferences(Reference.java:246)
+	at java.base@20.0.2/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:208)
+
+"Finalizer" daemon prio=8 Id=10 WAITING on java.lang.ref.NativeReferenceQueue$Lock@77aa26c
+	at java.base@20.0.2/java.lang.Object.wait0(Native Method)
+	-  waiting on java.lang.ref.NativeReferenceQueue$Lock@77aa26c
+	at java.base@20.0.2/java.lang.Object.wait(Object.java:366)
+	at java.base@20.0.2/java.lang.Object.wait(Object.java:339)
+	at java.base@20.0.2/java.lang.ref.NativeReferenceQueue.await(NativeReferenceQueue.java:48)
+	at java.base@20.0.2/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:158)
+	at java.base@20.0.2/java.lang.ref.NativeReferenceQueue.remove(NativeReferenceQueue.java:89)
+	at java.base@20.0.2/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:173)
+
+"Signal Dispatcher" daemon prio=9 Id=11 RUNNABLE
+
+"Attach Listener" daemon prio=5 Id=12 RUNNABLE
+
+"Common-Cleaner" daemon prio=8 Id=17 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@49bb30f9
+	at java.base@20.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@49bb30f9
+	at java.base@20.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+	at java.base@20.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+	at java.base@20.0.2/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+	at java.base@20.0.2/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+	at java.base@20.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+	at java.base@20.0.2/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:140)
+	at java.base@20.0.2/java.lang.Thread.runWith(Thread.java:1636)
+	...
+
+"Notification Thread" daemon prio=9 Id=18 RUNNABLE
+
+"Active Thread: Equinox Container: e2afaba1-6f5e-483b-b38f-4b1fb66a8405" prio=5 Id=22 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5db7fb5e
+	at java.base@20.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5db7fb5e
+	at java.base@20.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+	at java.base@20.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+	at java.base@20.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+	at java.base@20.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+	at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+	at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	...
+
+"Framework Event Dispatcher: Equinox Container: e2afaba1-6f5e-483b-b38f-4b1fb66a8405" daemon prio=5 Id=24 WAITING on org.eclipse.osgi.framework.eventmgr.EventManager$EventThread@4a7860ed
+	at java.base@20.0.2/java.lang.Object.wait0(Native Method)
+	-  waiting on org.eclipse.osgi.framework.eventmgr.EventManager$EventThread@4a7860ed
+	at java.base@20.0.2/java.lang.Object.wait(Object.java:366)
+	at java.base@20.0.2/java.lang.Object.wait(Object.java:339)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.getNextEvent(EventManager.java:400)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+"Start Level: Equinox Container: e2afaba1-6f5e-483b-b38f-4b1fb66a8405" daemon prio=5 Id=25 WAITING on org.eclipse.osgi.framework.eventmgr.EventManager$EventThread@62749d5c
+	at java.base@20.0.2/java.lang.Object.wait0(Native Method)
+	-  waiting on org.eclipse.osgi.framework.eventmgr.EventManager$EventThread@62749d5c
+	at java.base@20.0.2/java.lang.Object.wait(Object.java:366)
+	at java.base@20.0.2/java.lang.Object.wait(Object.java:339)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.getNextEvent(EventManager.java:400)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+"SCR Component Actor" daemon prio=5 Id=26 WAITING on java.util.LinkedList@72d84513
+	at java.base@20.0.2/java.lang.Object.wait0(Native Method)
+	-  waiting on java.util.LinkedList@72d84513
+	at java.base@20.0.2/java.lang.Object.wait(Object.java:366)
+	at java.base@20.0.2/java.lang.Object.wait(Object.java:339)
+	at org.apache.felix.scr.impl.ComponentActorThread.run(ComponentActorThread.java:83)
+	at java.base@20.0.2/java.lang.Thread.runWith(Thread.java:1636)
+	at java.base@20.0.2/java.lang.Thread.run(Thread.java:1623)
+
+"EMF Reference Cleaner" daemon prio=5 Id=28 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@10572d1d
+	at java.base@20.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@10572d1d
+	at java.base@20.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+	at java.base@20.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+	at java.base@20.0.2/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+	at java.base@20.0.2/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+	at java.base@20.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1707)
+	at java.base@20.0.2/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:67)
+	at java.base@20.0.2/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:158)
+	...
+
+"Worker-JM" prio=5 Id=30 WAITING on java.util.ArrayList@19a148f2
+	at java.base@20.0.2/java.lang.Object.wait0(Native Method)
+	-  waiting on java.util.ArrayList@19a148f2
+	at java.base@20.0.2/java.lang.Object.wait(Object.java:366)
+	at org.eclipse.core.internal.jobs.InternalWorker.run(InternalWorker.java:61)
+
+"Gogo shell" prio=5 Id=33 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5f79a8e7
+	at java.base@20.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5f79a8e7
+	at java.base@20.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+	at java.base@20.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+	at java.base@20.0.2/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+	at java.base@20.0.2/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+	at java.base@20.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1707)
+	at java.base@20.0.2/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+	...
+
+"Bundle File Closer" daemon prio=6 Id=36 WAITING on org.eclipse.osgi.framework.eventmgr.EventManager$EventThread@6f398ec6
+	at java.base@20.0.2/java.lang.Object.wait0(Native Method)
+	-  waiting on org.eclipse.osgi.framework.eventmgr.EventManager$EventThread@6f398ec6
+	at java.base@20.0.2/java.lang.Object.wait(Object.java:366)
+	at java.base@20.0.2/java.lang.Object.wait(Object.java:339)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.getNextEvent(EventManager.java:400)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+"Git Repository Closer" daemon prio=6 Id=39 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@462f69f9
+	at java.base@20.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@462f69f9
+	at java.base@20.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+	at java.base@20.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+	at java.base@20.0.2/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+	at java.base@20.0.2/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+	at java.base@20.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1707)
+	at java.base@20.0.2/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:67)
+	at java.base@20.0.2/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:158)
+	...
+
+"JNA Cleaner" daemon prio=6 Id=44 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@55da4f16
+	at java.base@20.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@55da4f16
+	at java.base@20.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+	at java.base@20.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+	at java.base@20.0.2/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+	at java.base@20.0.2/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+	at java.base@20.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1707)
+	at java.base@20.0.2/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:67)
+	at java.base@20.0.2/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:158)
+	...
+
+"Java indexing" daemon prio=4 Id=46 RUNNABLE
+	at java.base@20.0.2/java.util.Arrays.hashCode(Arrays.java:4356)
+	at org.eclipse.jdt.core.compiler.CharOperation.hashCode(CharOperation.java:2493)
+	at org.eclipse.jdt.internal.compiler.util.HashtableOfObject.putUnsafely(HashtableOfObject.java:146)
+	at org.eclipse.jdt.internal.compiler.util.HashtableOfObject.rehash(HashtableOfObject.java:188)
+	at org.eclipse.jdt.internal.compiler.util.HashtableOfObject.putUnsafely(HashtableOfObject.java:157)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategory(DiskIndex.java:509)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategories(DiskIndex.java:478)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:580)
+	...
+
+"org.eclipse.jdt.internal.ui.text.JavaReconciler" daemon prio=1 Id=47 TIMED_WAITING on org.eclipse.jface.text.reconciler.DirtyRegionQueue@4776fbda
+	at java.base@20.0.2/java.lang.Object.wait0(Native Method)
+	-  waiting on org.eclipse.jface.text.reconciler.DirtyRegionQueue@4776fbda
+	at java.base@20.0.2/java.lang.Object.wait(Object.java:366)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler.delay(AbstractReconciler.java:572)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:181)
+
+"EventAdmin Async Event Dispatcher Thread" daemon prio=6 Id=54 WAITING on org.eclipse.osgi.framework.eventmgr.EventManager$EventThread@641a024c
+	at java.base@20.0.2/java.lang.Object.wait0(Native Method)
+	-  waiting on org.eclipse.osgi.framework.eventmgr.EventManager$EventThread@641a024c
+	at java.base@20.0.2/java.lang.Object.wait(Object.java:366)
+	at java.base@20.0.2/java.lang.Object.wait(Object.java:339)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.getNextEvent(EventManager.java:400)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+"pool-1-thread-1" prio=5 Id=57 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@59c7cf97
+	at java.base@20.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@59c7cf97
+	at java.base@20.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+	at java.base@20.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+	at java.base@20.0.2/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+	at java.base@20.0.2/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+	at java.base@20.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1707)
+	at java.base@20.0.2/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+	...
+
+"pool-2-thread-1" prio=5 Id=58 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5e628946
+	at java.base@20.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5e628946
+	at java.base@20.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+	at java.base@20.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+	at java.base@20.0.2/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+	at java.base@20.0.2/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+	at java.base@20.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1707)
+	at java.base@20.0.2/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+	...
+
+"Thread-21" prio=5 Id=75 TIMED_WAITING
+	at java.base@20.0.2/java.lang.Thread.sleep0(Native Method)
+	at java.base@20.0.2/java.lang.Thread.sleep(Thread.java:484)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:73)
+
+"Provisioning Event Dispatcher" daemon prio=5 Id=78 WAITING on org.eclipse.osgi.framework.eventmgr.EventManager$EventThread@2e3a117b
+	at java.base@20.0.2/java.lang.Object.wait0(Native Method)
+	-  waiting on org.eclipse.osgi.framework.eventmgr.EventManager$EventThread@2e3a117b
+	at java.base@20.0.2/java.lang.Object.wait(Object.java:366)
+	at java.base@20.0.2/java.lang.Object.wait(Object.java:339)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.getNextEvent(EventManager.java:400)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+"Dali Event Handler" prio=6 Id=80 WAITING on org.eclipse.jpt.common.utility.internal.queue.SynchronizedQueue@1a867e92
+	at java.base@20.0.2/java.lang.Object.wait0(Native Method)
+	-  waiting on org.eclipse.jpt.common.utility.internal.queue.SynchronizedQueue@1a867e92
+	at java.base@20.0.2/java.lang.Object.wait(Object.java:366)
+	at java.base@20.0.2/java.lang.Object.wait(Object.java:339)
+	at org.eclipse.jpt.common.utility.internal.queue.SynchronizedQueue.waitUntilEmptyIs_(SynchronizedQueue.java:134)
+	at org.eclipse.jpt.common.utility.internal.queue.SynchronizedQueue.waitUntilEmptyIs(SynchronizedQueue.java:125)
+	at org.eclipse.jpt.common.utility.internal.queue.SynchronizedQueue.waitUntilNotEmpty(SynchronizedQueue.java:149)
+	at org.eclipse.jpt.common.utility.internal.command.AbstractAsynchronousCommandContext.waitForCommand(AbstractAsynchronousCommandContext.java:154)
+	at org.eclipse.jpt.common.utility.internal.command.AbstractAsynchronousCommandContext$Consumer.waitForProducer(AbstractAsynchronousCommandContext.java:189)
+	...
+
+"org.eclipse.jdt.internal.ui.text.JavaReconciler" daemon prio=1 Id=88 TIMED_WAITING on org.eclipse.jface.text.reconciler.DirtyRegionQueue@7ddaa122
+	at java.base@20.0.2/java.lang.Object.wait0(Native Method)
+	-  waiting on org.eclipse.jface.text.reconciler.DirtyRegionQueue@7ddaa122
+	at java.base@20.0.2/java.lang.Object.wait(Object.java:366)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler.delay(AbstractReconciler.java:572)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:181)
+
+"pool-3-thread-1" prio=5 Id=94 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@37383f66
+	at java.base@20.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@37383f66
+	at java.base@20.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+	at java.base@20.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+	at java.base@20.0.2/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+	at java.base@20.0.2/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+	at java.base@20.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1707)
+	at java.base@20.0.2/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+	...
+
+"Worker-18" prio=5 Id=188 TIMED_WAITING on org.eclipse.core.internal.jobs.WorkerPool@49775133
+	at java.base@20.0.2/java.lang.Object.wait0(Native Method)
+	-  waiting on org.eclipse.core.internal.jobs.WorkerPool@49775133
+	at java.base@20.0.2/java.lang.Object.wait(Object.java:366)
+	at org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:200)
+	at org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:242)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+"Worker-22: Process Console Input Job" prio=5 Id=221 WAITING on org.eclipse.ui.console.IOConsoleInputStream@60acc461
+	at java.base@20.0.2/java.lang.Object.wait0(Native Method)
+	-  waiting on org.eclipse.ui.console.IOConsoleInputStream@60acc461
+	at java.base@20.0.2/java.lang.Object.wait(Object.java:366)
+	at java.base@20.0.2/java.lang.Object.wait(Object.java:339)
+	at org.eclipse.ui.console.IOConsoleInputStream.waitForData(IOConsoleInputStream.java:141)
+	at org.eclipse.ui.console.IOConsoleInputStream.read(IOConsoleInputStream.java:92)
+	at org.eclipse.ui.console.IOConsoleInputStream.read(IOConsoleInputStream.java:114)
+	at org.eclipse.debug.internal.ui.views.console.ProcessConsole$InputReadJob.run(ProcessConsole.java:908)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+"Worker-23: Synchronizing Relevant Tasks" prio=5 Id=222 BLOCKED on org.eclipse.mylyn.internal.tasks.ui.TaskListSynchronizationScheduler@3e627f94 owned by "Worker-24: Activity Monitor Job" Id=231
+	at org.eclipse.mylyn.internal.tasks.ui.TaskListSynchronizationScheduler.jobDone(TaskListSynchronizationScheduler.java:168)
+	-  blocked on org.eclipse.mylyn.internal.tasks.ui.TaskListSynchronizationScheduler@3e627f94
+	at org.eclipse.mylyn.internal.tasks.ui.TaskListSynchronizationScheduler$1.done(TaskListSynchronizationScheduler.java:59)
+	at org.eclipse.core.internal.jobs.JobListeners$$Lambda$117/0x000001e401192420.notify(Unknown Source)
+	at org.eclipse.core.internal.jobs.JobListeners.sendEvent(JobListeners.java:160)
+	at org.eclipse.core.internal.jobs.JobListeners.sendEventsAsync(JobListeners.java:140)
+	at org.eclipse.core.internal.jobs.JobListeners.waitAndSendEvents(JobListeners.java:80)
+	at org.eclipse.core.internal.jobs.JobManager.withWriteLock(JobManager.java:524)
+	at org.eclipse.core.internal.jobs.JobManager.endJob(JobManager.java:728)
+	...
+
+	Number of locked synchronizers = 1
+	- java.util.concurrent.locks.ReentrantLock$NonfairSync@48d7bae7
+
+"Worker-24: Activity Monitor Job" prio=5 Id=231 RUNNABLE
+	at java.management@20.0.2/sun.management.ThreadImpl.dumpThreads0(Native Method)
+	at java.management@20.0.2/sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:540)
+	at java.management@20.0.2/sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:527)
+	at org.eclipse.core.internal.jobs.JobListeners.waitAndSendEvents(JobListeners.java:120)
+	at org.eclipse.core.internal.jobs.JobManager.withWriteLock(JobManager.java:524)
+	at org.eclipse.core.internal.jobs.JobManager.schedule(JobManager.java:1373)
+	at org.eclipse.core.internal.jobs.InternalJob.schedule(InternalJob.java:396)
+	at org.eclipse.core.runtime.jobs.Job.schedule(Job.java:684)
+	...
+
+"Worker-25" prio=5 Id=234 TIMED_WAITING on org.eclipse.core.internal.jobs.WorkerPool@49775133
+	at java.base@20.0.2/java.lang.Object.wait0(Native Method)
+	-  waiting on org.eclipse.core.internal.jobs.WorkerPool@49775133
+	at java.base@20.0.2/java.lang.Object.wait(Object.java:366)
+	at org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:200)
+	at org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:242)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+"Worker-26" prio=5 Id=235 TIMED_WAITING on org.eclipse.core.internal.jobs.WorkerPool@49775133
+	at java.base@20.0.2/java.lang.Object.wait0(Native Method)
+	-  waiting on org.eclipse.core.internal.jobs.WorkerPool@49775133
+	at java.base@20.0.2/java.lang.Object.wait(Object.java:366)
+	at org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:200)
+	at org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:242)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+"Output Stream Monitor for PID 6836 NumberFormat" daemon prio=1 Id=237 RUNNABLE
+	at java.base@20.0.2/java.io.FileInputStream.readBytes(Native Method)
+	at java.base@20.0.2/java.io.FileInputStream.read(FileInputStream.java:293)
+	at java.base@20.0.2/java.io.BufferedInputStream.read1(BufferedInputStream.java:311)
+	at java.base@20.0.2/java.io.BufferedInputStream.implRead(BufferedInputStream.java:386)
+	at java.base@20.0.2/java.io.BufferedInputStream.read(BufferedInputStream.java:365)
+	at java.base@20.0.2/java.io.FilterInputStream.read(FilterInputStream.java:95)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.internalRead(OutputStreamMonitor.java:249)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:225)
+	...
+
+	Number of locked synchronizers = 1
+	- java.util.concurrent.locks.ReentrantLock$NonfairSync@4b6615a2
+
+"Error Stream Monitor for PID 6836 NumberFormat" daemon prio=1 Id=238 RUNNABLE (in native)
+	at java.base@20.0.2/java.io.FileInputStream.readBytes(Native Method)
+	at java.base@20.0.2/java.io.FileInputStream.read(FileInputStream.java:293)
+	at java.base@20.0.2/java.io.BufferedInputStream.read1(BufferedInputStream.java:311)
+	at java.base@20.0.2/java.io.BufferedInputStream.implRead(BufferedInputStream.java:386)
+	at java.base@20.0.2/java.io.BufferedInputStream.read(BufferedInputStream.java:365)
+	at java.base@20.0.2/java.io.FilterInputStream.read(FilterInputStream.java:95)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.internalRead(OutputStreamMonitor.java:249)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:225)
+	...
+
+	Number of locked synchronizers = 1
+	- java.util.concurrent.locks.ReentrantLock$NonfairSync@3e939eab
+
+"Input Stream Monitor for PID 6836 NumberFormat" daemon prio=5 Id=239 WAITING on java.lang.Object@1320c832
+	at java.base@20.0.2/java.lang.Object.wait0(Native Method)
+	-  waiting on java.lang.Object@1320c832
+	at java.base@20.0.2/java.lang.Object.wait(Object.java:366)
+	at java.base@20.0.2/java.lang.Object.wait(Object.java:339)
+	at org.eclipse.debug.internal.core.InputStreamMonitor.writeNext(InputStreamMonitor.java:199)
+	at org.eclipse.debug.internal.core.InputStreamMonitor.write(InputStreamMonitor.java:169)
+	at org.eclipse.debug.internal.core.InputStreamMonitor$$Lambda$1536/0x000001e401f9f6a0.run(Unknown Source)
+	at java.base@20.0.2/java.lang.Thread.runWith(Thread.java:1636)
+	at java.base@20.0.2/java.lang.Thread.run(Thread.java:1623)
+
+"Process monitor for PID 6836 NumberFormat" daemon prio=5 Id=240 RUNNABLE (in native)
+	at java.base@20.0.2/java.lang.ProcessImpl.waitForInterruptibly(Native Method)
+	at java.base@20.0.2/java.lang.ProcessImpl.waitFor(ProcessImpl.java:569)
+	at org.eclipse.debug.core.model.RuntimeProcess$ProcessMonitorThread.run(RuntimeProcess.java:496)
+
+"Worker-27" prio=5 Id=241 TIMED_WAITING on org.eclipse.core.internal.jobs.WorkerPool@49775133
+	at java.base@20.0.2/java.lang.Object.wait0(Native Method)
+	-  waiting on org.eclipse.core.internal.jobs.WorkerPool@49775133
+	at java.base@20.0.2/java.lang.Object.wait(Object.java:366)
+	at org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:200)
+	at org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:242)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+
+!SESSION 2023-10-26 14:35:02.135 -----------------------------------------------
+eclipse.buildId=4.28.0.20230608-1200
+java.version=20.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-10-26 14:35:10.550
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY org.eclipse.core.resources 2 10035 2023-10-26 14:35:21.052
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.e4.ui.css.swt.theme 4 0 2023-10-26 14:35:54.912
+!MESSAGE /css/gef_dark.css
+!STACK 0
+java.io.FileNotFoundException: /css/gef_dark.css
+	at org.eclipse.osgi.storage.url.bundleentry.Handler.findBundleEntry(Handler.java:55)
+	at org.eclipse.osgi.storage.url.BundleResourceHandler.openConnection(BundleResourceHandler.java:182)
+	at java.base/java.net.URL.openConnection(URL.java:1250)
+	at org.eclipse.osgi.storage.url.BundleURLConverter.resolve(BundleURLConverter.java:55)
+	at org.eclipse.core.runtime.FileLocator.resolve(FileLocator.java:288)
+	at org.eclipse.core.internal.runtime.PlatformURLConverter.resolve(PlatformURLConverter.java:53)
+	at org.eclipse.core.runtime.FileLocator.resolve(FileLocator.java:288)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:468)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:436)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:428)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.restore(ThemeEngine.java:624)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.setCSSTheme(PartRenderingEngine.java:1417)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.initializeStyling(PartRenderingEngine.java:1324)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1050)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+
+!ENTRY org.eclipse.jface 2 0 2023-10-26 14:35:56.735
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-10-26 14:35:56.735
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-10-26 14:36:35.328
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\postb'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.buildship.core 2 0 2023-10-26 14:51:05.649
+!MESSAGE Project Daily_Dose_2 is not a Gradle project

@@ -1,0 +1,16 @@
+package patterns;
+
+public class DescTri {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int row=5;
+		for(int i=row;i>0;i--) {
+			for(int j=1;j<=row;j++) {
+				System.out.print("6");
+			}
+			System.out.println();
+		}
+	}
+
+}
